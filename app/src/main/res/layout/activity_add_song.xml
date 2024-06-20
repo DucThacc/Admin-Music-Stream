@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextSongTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter song title"
+        android:inputType="text"
+        android:background="@drawable/rounded_corner"
+        android:textColorHint="@color/black"
+        android:padding="16dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextSongSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter author"
+        android:inputType="text"
+        android:background="@drawable/rounded_corner"
+        android:textColorHint="@color/black"
+        android:padding="16dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image" />
+
+    <TextView
+        android:id="@+id/statusImageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No image selected" />
+
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Selected Image"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonSelectAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Audio" />
+
+    <TextView
+        android:id="@+id/statusAudioTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No audio selected" />
+
+    <Button
+        android:id="@+id/buttonUploadSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Song" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status" />
+
+</LinearLayout>
